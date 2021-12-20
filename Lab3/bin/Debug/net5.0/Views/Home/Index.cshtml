@@ -1,0 +1,47 @@
+﻿@model Lab3.Models.NotificationBarModel
+
+<div class="grid-container">
+
+    <div class="head under">
+
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
+            <li>@Html.ActionLink("Вторая страница", "Page2", "Home")</li>
+        </ul>
+
+        <ol id="header-list"></ol>
+    </div>
+    <div class="main-center">
+        <ol id="main-center-list"></ol>
+    </div>
+    <div class="main" id="main">
+        <div class="maxSearch">
+            <div class="max">
+                <h2>Введіть текст</h2>
+            </div>
+
+            <form method="post" asp-action="SaveNotificationText"  id="num">
+                <input class="numbers" type="text" name="Content">
+                <input id="send-btn" type="submit" style="width: auto;">
+            </form>
+        </div>
+
+    </div>
+    <div class="right-bottom">
+        <p>
+            <ol id="right-bottom-list"></ol>
+        </p>
+    </div>
+    <div class="right-top under" id="right-top">
+        <p>
+            <ol id="right-top-list"></ol>
+        </p>
+    </div>
+    <div class="left under" id="left">
+        <ol id="left-list"></ol>
+    </div>
+    <div class="foot under" id="footer">
+        <ol id="Footer-list"></ol>
+    </div>
+
+</div>

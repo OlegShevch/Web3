@@ -1,0 +1,62 @@
+﻿@model Lab3.Models.NotificationBarModel
+
+<div id="barwrap">
+    <div class="bar">
+        <span id="head-image"><img src="img/authkey.png" alt=""></span>
+        <span id="text">@Model.Content</span>
+        <span id="otherimg"></span>
+        <span id="ok"><a href="#">Dismiss</a></span>
+    </div>
+</div>
+
+
+<div class="grid-container">
+
+    <div class="head under">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
+            <li>@Html.ActionLink("Вторая страница", "Page2", "Home")</li>
+        </ul>
+        <ol id="header-list"></ol>
+    </div>
+    <div class="main-center">
+        <ol id="main-center-list"></ol>
+    </div>
+    <div class="main" id="main">
+    </div>
+    <div class="right-bottom">
+        <p>
+            <ol id="right-bottom-list"></ol>
+        </p>
+    </div>
+    <div class="right-top under" id="right-top">
+        <p>
+            <ol id="right-top-list"></ol>
+        </p>
+    </div>
+    <div class="left under" id="left">
+        <ol id="left-list"></ol>
+    </div>
+    <div class="foot under" id="footer">
+        <ol id="Footer-list"></ol>
+    </div>
+
+</div>
+
+<script>
+    $(function A() {
+        setTimeout(function () {
+            return $(".bar").animate({
+                height: "toggle"
+            }, "slow")
+        }, 450);
+        return $("#ok").on("click", function () {
+            console.log("jhjgjhgjh")
+            $("#barwrap").css("margin-bottom", "0px");
+            $(".bar").animate({
+                height: "toggle"
+            }, "slow");
+            return !1
+        })
+    });
+</script>

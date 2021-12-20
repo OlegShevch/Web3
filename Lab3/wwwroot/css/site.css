@@ -1,0 +1,215 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+body, html {
+    height: 100%;
+    min-height: 100% !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.3fr 0.5fr 1.6fr 0.6fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "head head head head" "left main-center main-center right-top" "left main main right-top" "left main main right-bottom" "foot foot foot foot";
+    height: 100%;
+    min-height: 100% !important;
+}
+
+.head {
+    grid-area: head;
+    display: flex;
+    background-color: rgb(124, 194, 152);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-center {
+    grid-area: main-center;
+    background-color: rgb(253, 171, 171);
+    padding: 3%;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    background-color: rgb(186, 131, 190);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-bottom {
+    grid-area: right-bottom;
+    background-color: rgb(253, 171, 171);
+    padding: 3%;
+}
+
+.right-top {
+    grid-area: right-top;
+    background-color: rgb(153, 245, 153);
+}
+
+.left {
+    grid-area: left;
+    background-color: rgb(219, 225, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: rgb(142, 247, 212);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-my-class {
+    text-align: right !important;
+    justify-content: right !important;
+    flex-direction: initial !important;
+}
+
+.under {
+    display: grid;
+}
+
+
+/* space between the bar and your content */
+#barwrap {
+}
+
+.bar {
+    text-align: center;
+    padding: 8px;
+    padding-top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* set it at will according to your message's length in small devices */
+    max-height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: #f5f5f5;
+    border-bottom: thick ridge rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 13px 0.5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 13px 0.5px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 3008;
+}
+
+#head-image {
+    margin-right: 1%;
+    position: relative;
+    top: 8px;
+}
+
+#text {
+    position: relative;
+}
+
+#ok {
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+    #ok a {
+        color: #3EAAEE;
+        text-decoration: none;
+    }
